@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Антон Соломатин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2617847).
-- Наставник: [Екатерна Комнатная](https://htmlacademy.ru/profile/id215761).
+- Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 - Сайт: [Мой проект Седона](https://antonsolomatin.github.io/2617847-sedona-2/)
 
 ---
