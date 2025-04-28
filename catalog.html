@@ -17,7 +17,7 @@
             <a class="navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="about.html" class="navigation-link">О седоне</a>
+            <a href="about.html" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a
@@ -139,7 +139,7 @@
               name="0"
               min="0"
               max="9000"
-              placeholder="0"
+              placeholder="от"
             />
             <label for="9000">до</label>
             <input
@@ -148,7 +148,7 @@
               name="9000"
               min="0"
               max="9000"
-              placeholder="9000"
+              placeholder="до"
             />
           </fieldset>
           <button class="filter-button-submite" type="submit">Применить</button>
@@ -157,7 +157,7 @@
           </button>
         </form>
       </section>
-      <section>
+      <section class="search-result">
         <h2>Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="сортировка">
           <option value="cheap">Сначала дешёвые</option>
@@ -181,7 +181,7 @@
               <h3 class="catalog-title">Amara Resort & Spa</h3></a>
             <span class="type-housing">Гостиница</span>
             <span class="catalog-item-price">от 4000р</span>
-            <a href="#">Подробнее</a>
+            <a class="more-details" href="#">Подробнее</a>
             <button class="favorites-card">В избранное</button>
            <p class="raiting-stars">
             <span class="visualy-hidden">Отель 4 звезды</span></p>
@@ -194,8 +194,8 @@
               <h3 class="catalog-title">Villas at Poco Diablo</h3></a>
             <span class="type-housing">Гостиница</span>
             <span class="catalog-item-price">от 5000р</span>
-            <a href="#">Подробнее</a>
-            <button class="favorites-card">В избранное</button>
+            <a class="more-details" href="#">Подробнее</a>
+            <button class="favorites-card-current">В избранном</button>
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 4 звезды</span></p>
             <span class="rating">Рейтинг 9,2</span>
@@ -206,7 +206,7 @@
            <a class="catalog-card-link" href="#"></a> <h3 class="catalog-title">Desert Quail Inn</h3></a>
             <span class="type-housing">Гостиница</span>
             <span class="hotel-card-price">от 2500р</span>
-            <a href="#">Подробнее</a>
+            <a class="more-details" href="#">Подробнее</a>
             <button class="favorites-card">В избранное</button>
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 3 звезды</span></p>
@@ -218,7 +218,7 @@
             <a class="catalog-card-link" href="#">  <h3 class="catalog-title">GreenTree Inn</h3></a>
             <span class="type-housing">Гостиница</span>
             <span class="hotel-card-price">от 1500р</span>
-            <a href="#">Подробнее</a>
+            <a class="more-details" href="#">Подробнее</a>
             <button class="favorites-card">В избранное</button>
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 2 звезды</span></p>
@@ -226,7 +226,7 @@
           </li>
         </ul>
       </section>
-      <section class="newsletter">
+      <section class="newsletter-inner">
         <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
         <p class="newsletter-description">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -235,7 +235,7 @@
           <label>
             <input type="email" name="email" placeholder="Ваш email" required />
           </label>
-          <button type="submit">Подписаться</button>
+          <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </section>
       <ul class="pagination">
@@ -252,7 +252,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
+          <a class="pagination-link pagination-more" href="#">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
@@ -278,7 +278,7 @@
         </li>
       </ul>
       <section class="contacts">
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="Academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="images/html-academy-logo.svg" alt="Логотип академии">
       </section>
