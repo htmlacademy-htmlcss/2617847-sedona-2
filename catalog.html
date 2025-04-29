@@ -134,6 +134,7 @@
             <legend class="price-title">Стоимость, Р:</legend>
             <label for="0">от</label>
             <input
+              class="button"
               type="number"
               id="0"
               name="0"
@@ -151,15 +152,15 @@
               placeholder="до"
             />
           </fieldset>
-          <button class="filter-button-submite" type="submit">Применить</button>
-          <button class="filter-button-reset" type="reset" value="Reset">
+          <button class="filter-button-submite button" type="submit">Применить</button>
+          <button class="filter-button-reset button" type="reset" value="Reset">
             Сбросить
           </button>
         </form>
       </section>
       <section class="search-result">
         <h2>Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="сортировка">
+        <select class="select-control select-button" aria-label="сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
@@ -182,7 +183,7 @@
             <span class="type-housing">Гостиница</span>
             <span class="catalog-item-price">от 4000р</span>
             <a class="more-details" href="#">Подробнее</a>
-            <button class="favorites-card">В избранное</button>
+            <button class="favorites-card button">В избранное</button>
            <p class="raiting-stars">
             <span class="visualy-hidden">Отель 4 звезды</span></p>
             <span class="rating">Рейтинг 8,5</span>
@@ -195,7 +196,7 @@
             <span class="type-housing">Гостиница</span>
             <span class="catalog-item-price">от 5000р</span>
             <a class="more-details" href="#">Подробнее</a>
-            <button class="favorites-card-current">В избранном</button>
+            <button class="favorites-card-current button">В избранном</button>
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 4 звезды</span></p>
             <span class="rating">Рейтинг 9,2</span>
@@ -207,7 +208,7 @@
             <span class="type-housing">Гостиница</span>
             <span class="hotel-card-price">от 2500р</span>
             <a class="more-details" href="#">Подробнее</a>
-            <button class="favorites-card">В избранное</button>
+            <button class="favorites-card button">В избранное</button>
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 3 звезды</span></p>
             <span class="rating">Рейтинг 6,9</span>
@@ -219,26 +220,16 @@
             <span class="type-housing">Гостиница</span>
             <span class="hotel-card-price">от 1500р</span>
             <a class="more-details" href="#">Подробнее</a>
-            <button class="favorites-card">В избранное</button>
+            <button class="favorites-card button">В избранное</button>
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 2 звезды</span></p>
             <span class="rating">Рейтинг 5,0</span>
           </li>
         </ul>
+
       </section>
       <section class="newsletter-inner">
-        <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
-        <p class="newsletter-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form action="https://echo.htmlacademy.ru">
-          <label>
-            <input type="email" name="email" placeholder="Ваш email" required />
-          </label>
-          <button type="submit" class="subscribe-button">Подписаться</button>
-        </form>
-      </section>
-      <ul class="pagination">
+           <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current" href="#">1</a>
         </li>
@@ -258,6 +249,19 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
+        <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
+        <p class="newsletter-description">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form action="https://echo.htmlacademy.ru">
+          <label>
+            <input type="email" name="email" placeholder="Ваш email" required />
+          </label>
+          <button type="submit" class="subscribe-button button">Подписаться</button>
+        </form>
+
+      </section>
+
     </main>
     <footer class="inner-page-footer">
       <ul class="socials-list">
