@@ -13,19 +13,83 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   font-style: normal;
-  background-color: #f2f2f2;
   color: #000000;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 1200px;
+  margin: 0;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.main-container {
+  flex-grow: 1;
+  margin: 0 auto;
 }
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1200px;
+  height: 64px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-logo {
+  margin-left: 70px;
+}
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  width: 339px;
+  height: 64px;
+}
+
+.navigation-item {
+  padding: 20px 16px;
+  justify-content: baseline;
+}
+
+.navigation-item-icon {
+  margin: 22px 12px;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
 }
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -33,6 +97,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
+  color: #000000;
 }
 
 .header-button {
@@ -45,12 +110,21 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #757157;
+  width: 160px;
+  height: 36px;
 }
 
 .main-logo {
   background-image: url("../images/decorate/mountain.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.sedona-logo {
+  display: block;
+  margin: 0 auto;
+  width: 458px;
+  height: 352px;
 }
 
 .main-description {
@@ -61,12 +135,72 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
+  padding: 69px 290px 25px;
+  margin: 0;
 }
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-image {
+  width: 800px;
+  height: 385px;
+}
+
 .advantages-item-wide {
+  display: flex;
+  flex-direction: row;
+
+  width: 1200px;
+  height: 385px;
   background-color: #82b3d3;
 }
+
+.advantages-item-wide-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 385px;
+  background-color: #82b3d3;
+}
+
+.advantages-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
 .advantages-item-black {
+  width: 400px;
+  height: 385px;
+  margin: 0;
+
   background-color: #83b3d3;
+}
+
+.advantages-title-white {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82b3d3;
+  padding: 85px 112px;
+  margin: 0;
+}
+.advantages-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-advantages-title {
@@ -76,15 +210,8 @@ body {
   color: #333333;
   text-align: center;
   background-color: #ffffff;
-}
-.advantages-title-white {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #82b3d3;
+  padding: 25px 15px 69px;
+  margin: 0;
 }
 
 .advantages-title-black {
@@ -94,6 +221,8 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+  padding: 85px 112px;
+  margin: 0;
 }
 
 .advantage-description-white {
@@ -102,6 +231,8 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-align: center;
+  padding: 30px 85px 102px;
+  margin: 0;
 }
 
 .advantage-description-black {
@@ -110,6 +241,8 @@ body {
   line-height: 21px;
   color: #333333;
   text-align: center;
+  padding: 31px 85px 0;
+  margin: 0;
 }
 
 .advantages-item-light {
@@ -119,6 +252,20 @@ body {
 .advantages-item-medium {
   background: rgba(131, 179, 211, 0.2);
 }
+.services-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.infrastructure-list {
+  display: flex;
+  width: 1200px;
+  height: 385px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 .main-infrastructure-description {
   font-weight: 700;
@@ -126,6 +273,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  padding: 64px 347px 20px;
+  margin: 0;
 }
 
 .personal {
@@ -134,6 +283,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  padding: 20px 305px 64px;
+  margin: 0;
 }
 
 .infrastructure-title {
@@ -142,6 +293,8 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  padding: 183px 85px 30px;
+  margin: 0;
 }
 
 .infrastructure-description {
@@ -150,6 +303,13 @@ body {
   line-height: 21px;
   color: #333333;
   text-align: center;
+  margin: 0;
+  padding: 0 85px 81px;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
 }
 
 .reservation-title {
@@ -159,6 +319,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 96px 451px 20px;
 }
 
 .reservation-description {
@@ -166,6 +328,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding: 0 304px 54px;
 }
 
 .reservation-link {
@@ -177,6 +341,9 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #756157;
+  width: 376px;
+  height: 52px;
+  margin: 54px 412px 96px;
 }
 
 .newsletter {
@@ -184,6 +351,10 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  width: 1200px;
+  height: 414px;
+  display: flex;
+  flex-direction: column;
 }
 
 .newsletter-title {
@@ -192,6 +363,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
+  padding: 96px 398px 20px;
 }
 
 .newsletter-description {
@@ -200,6 +373,24 @@ body {
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+  margin: 0;
+  padding: 0 362px;
+}
+
+.description-form {
+  display: flex;
+  flex-direction: row;
+  width: 684px;
+  height: 52px;
+  margin: 54px 258px 104px;
+}
+
+.input-area {
+  width: 452px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .subscribe-button {
@@ -210,6 +401,11 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #83b3d3;
+  width: 232px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .input-font {
@@ -217,6 +413,58 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+.socials-list {
+  width: 142px;
+  margin-right: 41px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+.academy-logo {
+  width: 115px;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 41px;
+}
+
+.contact-tel {
+  width: 720px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 5px 194px;
+}
+.page-header-inner {
+  width: 1200px;
+}
+
+.main-inner-container {
+  width: 1200px;
+}
+.filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .hotels-filter {
@@ -398,16 +646,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-}
-
-.contact-tel {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
 }
 
 .select-control {

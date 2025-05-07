@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="page-header" data-test="header">
+    <header class="page-header">
+      <div class="header-container">
       <a href="#" class="navigation-logo">
         <img
           class="page-header-logo"
@@ -32,12 +33,12 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item-icon">
             <a href="#" class="navigation-link">
               <span class="visualy-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-icon">
             <a href="#" class="navigation-link">
               <span class="visualy-hidden">Избранное<span class="likes-number">12</span>
           </a>
@@ -45,8 +46,10 @@
         </ul>
         <a class="header-button" href="search#">Хочу сюда!</a>
       </nav>
+    </div>
     </header>
-    <main class="main-index">
+    <main class="main-index main-container">
+      <div class="page-container">
       <section class="main-logo">
       <h2 class="visualy-hidden">Седона, городок в Аризоне</h2>
       <img class="sedona-logo" src="images/welcome-sedona.svg" width="458" height="352" alt="добро пожаловать в седону" />
@@ -60,10 +63,11 @@
         <p class="main-advantages-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item-wide">
-            <h3 class="advantages-title-white">Настоящий городок</h3>
+            <div class="advantages-container"><h3 class="advantages-title-white">Настоящий городок</h3>
             <p class="advantage-description-white">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
+          </div>
             <img
               class="advantages-image"
               src="images/town.jpg"
@@ -72,7 +76,7 @@
               alt="Отель"
             />
           </li>
-          <li class="advantages-item-black advantages-item-light">
+          <div class="advantages-row"><li class="advantages-item-black advantages-item-light">
             <h3 class="advantages-title-black">Небольшая площадь</h3>
             <p class="advantage-description-black">
               Все достопримечательности находятся очень близко
@@ -90,11 +94,13 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages-item-wide">
-            <h3 class="advantages-title-white">Там есть мост дьявола</h3>
+        </div>
+          <li class="advantages-item-wide-reverse">
+            <div class="advantages-container"><h3 class="advantages-title-white">Там есть мост дьявола</h3>
             <p class="advantage-description-white">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
+          </div>
             <img
               class="advantages-image"
               src="images/devil-bridge.jpg"
@@ -106,6 +112,7 @@
         </ul>
       </section>
       <section class="services">
+        <div class="services-container">
         <h2 class="main-infrastructure-title visualy-hidden">Инфраструктура</h2>
         <p class="main-infrastructure-description">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -134,6 +141,7 @@
             <img src="" alt="">
           </li>
         </ul>
+      </div>
       </section>
       <section class="reservation">
         <h2 class="reservation-title">Заинтересовались?</h2>
@@ -148,10 +156,10 @@
         <p class="newsletter-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="description-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="email-subscribe">Ваш Email</label>
           <input
-            class="input-font"
+            class="input-font input-area"
             type="email"
             name="email"
             placeholder="Ваш Email"
@@ -161,8 +169,10 @@
           <button type="submit" class="subscribe-button button">Подписаться</button>
         </form>
       </section>
+    </div>
     </main>
     <footer class="page-footer">
+    <div class="page-footer-container">
       <ul class="socials-list">
         <li class="socials-item">
           <a href="https://vk.com/htmlacademy">
@@ -182,10 +192,11 @@
       </ul>
       <section class="contacts">
         <a class="contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="Academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="images/html-academy-logo.svg" alt="Логотип академии">
         </a>
       </section>
+    </div>
     </footer>
   </body>
 </html>
