@@ -393,6 +393,15 @@ body {
   border: none;
 }
 
+.input-area-inner {
+  width: 452px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+
 .subscribe-button {
   font-weight: 700;
   font-size: 20px;
@@ -423,6 +432,14 @@ body {
   height: 120px;
   margin: 0 auto;
 }
+
+.main-inner-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
 .socials-list {
   width: 142px;
   margin-right: 41px;
@@ -460,7 +477,10 @@ body {
 
 .main-inner-container {
   width: 1200px;
+  flex-grow: 1;
+  margin: 0 auto;
 }
+
 .filter {
   display: flex;
   flex-direction: row;
@@ -478,12 +498,21 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+  padding: 0;
+  margin: 35px 0 8px 70px;
 }
+
 .breadcrumps-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  flex-direction: row;
+}
+
+.breadcrumps-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .catalog-filter-group .catalog-filter-title {
@@ -491,6 +520,11 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  margin: 182px 70px 73px;
 }
 
 .catalog-filter-item {
@@ -610,6 +644,12 @@ body {
   color: #333333;
 }
 
+.catalog-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .pagination {
   font-weight: 700;
   font-size: 20px;
@@ -620,6 +660,11 @@ body {
 
 .newsletter-inner {
   text-align: center;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 414px;
+  display: flex;
+  flex-direction: column;
 }
 
 .newsletter-inner .newsletter-title {
@@ -664,6 +709,11 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #82b3d3;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  padding: 11px 24px 12px 23px;
+  margin-right: 8px;
 }
 
 .pagination-current {
@@ -677,4 +727,10 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
 }
