@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <div class="header-container">
     <header class="page-header">
       <nav class="navigation">
         <a href="index.html" class="navigation-logo">
@@ -42,6 +43,7 @@
         </ul>
         <a class="header-button" href="search#">Хочу сюда!</a>
       </nav>
+    </div>
     </header>
     <main class="main-inner main-inner-container">
       <div class="page-inner-container">
@@ -157,15 +159,16 @@
               placeholder="до"
             />
           </fieldset>
+          <div class="action-buttons">
           <button class="filter-button-submite button" type="submit">Применить</button>
-          <button class="filter-button-reset button" type="reset" value="Reset">
-            Сбросить
-          </button>
+          <button class="filter-button-reset button" type="reset" value="Reset">Сбросить</button>
+        </div>
         </form>
       </div>
       </section>
       <section class="search-result">
-        <h2>Найдено гостиниц: 38</h2>
+        <div class="result-container">
+        <h2 class="search-title">Найдено гостиниц: 38</h2>
         <select class="select-control select-button" aria-label="сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="popular">Сначала популярные</option>
@@ -180,8 +183,10 @@
         <a class="catalog-view" href="#">
           <span class="visualy-hidden">Списком</span>
         </a>
+      </div>
         <ul class="catalog-list">
           <div class="catalog-list-container">
+            <div class="catalog-item-container">
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1" >
               <img class="catalog-item-image" width="300" height="212" src="images/hotel-1 .jpg" alt="карточка отеля"/></a>
@@ -195,6 +200,8 @@
             <span class="visualy-hidden">Отель 4 звезды</span></p>
             <span class="rating">Рейтинг 8,5</span>
           </li>
+        </div>
+        <div class="catalog-item-container">
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
               <img class="catalog-item-image" src="images/hotel-2 .jpg" width="300" height="212" alt="карточка отеля"/></a>
@@ -208,6 +215,8 @@
               <span class="visualy-hidden">Отель 4 звезды</span></p>
             <span class="rating">Рейтинг 9,2</span>
           </li>
+        </div>
+        <div class="catalog-item-container">
           <li class="catalog-item">
            <a class="catalog-card-link" href="#" tabindex="-1">
              <img class="catalog-item-image" src="images/hotel-3 .jpg" width="300" height="212" alt="карточка отеля"  /></a>
@@ -220,6 +229,8 @@
               <span class="visualy-hidden">Отель 3 звезды</span></p>
             <span class="rating">Рейтинг 6,9</span>
           </li>
+        </div>
+        <div class="catalog-item-container">
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
                <img class="catalog-item-image" src="images/hotel-4 .jpg" width="300" height="212" alt="карточка отеля" /></a>
@@ -233,11 +244,12 @@
             <span class="rating">Рейтинг 5,0</span>
           </li>
         </div>
+        </div>
         </ul>
-      </section>
 
+      </section>
+      <div class="pagination-container">
            <ul class="pagination">
-            <div class="pagination-container">
         <li class="pagination-item">
           <a class="pagination-link pagination-current" href="#">1</a>
         </li>
@@ -256,8 +268,8 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
-      </div>
       </ul>
+    </div>
       <section class="newsletter-inner">
         <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
         <p class="newsletter-description">

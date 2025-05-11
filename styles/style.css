@@ -36,6 +36,17 @@ body {
   outline-offset: -5px;
 }
 
+.visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   flex-grow: 1;
   margin: 0 auto;
@@ -44,8 +55,6 @@ body {
 .page-header {
   color: #000000;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
 }
 
 .page-container {
@@ -66,17 +75,20 @@ body {
   display: flex;
   flex-direction: row;
   width: 1200px;
+  height: 64px;
   margin: 0 auto;
+  align-items: center;
 }
 .navigation-logo {
   margin-left: 70px;
 }
 .navigation-list {
   display: flex;
-  flex-direction: row;
-  margin-left: 30px;
-  width: 339px;
-  height: 64px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .navigation-item {
@@ -93,6 +105,7 @@ body {
   margin-left: auto;
 }
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -101,18 +114,25 @@ body {
   color: #000000;
 }
 
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+}
+
 .header-button {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  align-content: center;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #757157;
   width: 160px;
   height: 36px;
+  margin: 14px 70px 20px;
 }
 
 .main-logo {
@@ -146,6 +166,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-image {
@@ -196,8 +217,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #82b3d3;
-  padding: 85px 112px;
-  margin: 0;
+  padding: 0;
+  margin: 102px 112px 30px;
 }
 .advantages-container {
   display: flex;
@@ -222,8 +243,8 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  padding: 85px 112px;
-  margin: 0;
+  padding: 0;
+  margin: 112px 112px 30px;
 }
 
 .advantage-description-white {
@@ -232,8 +253,8 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-align: center;
-  padding: 30px 85px 102px;
-  margin: 0;
+  margin: 30px 85px 102px;
+  padding: 0;
 }
 
 .advantage-description-black {
@@ -266,6 +287,7 @@ body {
   height: 385px;
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
 .main-infrastructure-description {
@@ -294,8 +316,8 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding: 183px 85px 30px;
-  margin: 0;
+  padding: 0;
+  margin: 30px 85px;
 }
 
 .infrastructure-description {
@@ -304,8 +326,8 @@ body {
   line-height: 21px;
   color: #333333;
   text-align: center;
-  margin: 0;
-  padding: 0 85px 81px;
+  padding: 0;
+  margin: 241px 85px 81px 85px;
 }
 
 .reservation {
@@ -430,15 +452,9 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   width: 1200px;
   height: 120px;
-  margin: 0 auto;
-}
-
-.main-inner-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   margin: 0 auto;
 }
 
@@ -446,10 +462,10 @@ body {
   width: 142px;
   margin-right: 41px;
   display: flex;
-  flex-direction: row;
   margin-top: 40px;
   margin-left: 70px;
   margin-bottom: 30px;
+  list-style-type: none;
 }
 
 .academy-logo {
@@ -473,20 +489,24 @@ body {
   margin-bottom: 30px;
   padding: 5px 194px;
 }
-.page-header-inner {
-  width: 1200px;
-}
 
-.main-inner-container {
+.page-inner-container {
   width: 1200px;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin: 0 auto;
+  padding: 0;
 }
 
 .filter {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.hotels-filter-container {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .hotels-filter {
@@ -525,8 +545,13 @@ body {
 }
 
 .catalog-filter-group {
+  justify-content: space-around;
+  border: none;
   padding: 0;
-  margin: 182px 70px 73px;
+  margin: 40px 70px 73px;
+}
+.catalog-filter-list {
+  list-style: none;
 }
 
 .catalog-filter-item {
@@ -551,6 +576,10 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  margin: 0;
+  padding: 8px 50px;
+  width: 191px;
+  height: 36px;
 }
 
 .filter-button-reset {
@@ -561,14 +590,41 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background: none;
+  margin: 0;
+  padding: 8px 57px;
+  width: 191px;
+  height: 36px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+  height: 104px;
+  justify-content: space-around;
+  padding: 0;
+  margin: 70px;
 }
 
 .search-result h2 {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1060px;
+  height: 49px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .catalog-title {
@@ -577,12 +633,15 @@ body {
   line-height: 28px;
   color: #000000;
   text-decoration: none;
+  margin: 16px 0;
 }
+
 .catalog-card-link {
   text-decoration: none;
 }
 
 .more-details {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -591,6 +650,26 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
+  width: 140px;
+  height: 36px;
+}
+
+.catalog-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 1060px;
+}
+
+.catalog-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 438px;
+  padding: 20px;
+  border: #e5e5e5 solid 1px;
+  margin: 20px;
 }
 
 .button {
@@ -610,6 +689,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  width: 140px;
+  height: 36px;
 }
 
 .favorites-card-current {
@@ -620,6 +701,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #7db54f;
+  width: 140px;
+  height: 36px;
 }
 
 .type-housing {
@@ -646,18 +729,20 @@ body {
   color: #333333;
 }
 
-.catalog-list-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.catalog-list {
+  list-style: none;
+  padding-left: 20px;
+  margin-left: 70px;
 }
 
 .pagination {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .newsletter-inner {
@@ -696,6 +781,8 @@ body {
 }
 
 .select-control {
+  width: 292px;
+  height: 49px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
