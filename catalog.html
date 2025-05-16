@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <div class="header-container">
+
     <header class="page-header">
+       <div class="header-container">
       <nav class="navigation">
         <a href="index.html" class="navigation-logo">
           <img class="page-header-logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип сайта" />
@@ -50,7 +51,6 @@
       <section class="hotels-filter">
         <div class="hotels-filter-container">
         <h2 class="hotel-search-title">Гостиницы Седоны</h2>
-
         <ul class="breadcrumps-list">
           <div class="breadcrumps-container">
           <li class="breadcrumps-item">
@@ -66,35 +66,13 @@
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label for="pool" class="controls"
-                  ><input
-                    class="controls"
-                    name="pool"
-                    type="checkbox"
-                    id="pool"
-                    checked
-                  />Бассейн</label
-                >
+                <label for="pool" class="controls"><input class="controls" name="pool" type="checkbox" id="pool" checked/>Бассейн</label>
               </li>
               <li class="catalog-filter-item">
-                <label for="parking" class="controls"
-                  ><input
-                    class="controls"
-                    name="parking"
-                    type="checkbox"
-                    id="parking"
-                    checked
-                  />Парковка</label
-                >
+                <label for="parking" class="controls"><input class="controls" name="parking" type="checkbox" id="parking" checked/>Парковка</label>
               </li>
               <li class="catalog-filter-item">
-                <label for="wi-fi" class="controls">
-                  <input
-                    class="controls"
-                    name="wi-fi"
-                    type="checkbox"
-                    id="wi-fi"/>wi-fi
-                </label>
+                <label for="wi-fi" class="controls"><input class="controls" name="wi-fi" type="checkbox" id="wi-fi"/>wi-fi</label>
               </li>
             </ul>
           </fieldset>
@@ -102,62 +80,22 @@
             <legend class="catalog-filter-title">Тип жилья</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label for="hotel" class="controls"
-                  ><input
-                    class="controls"
-                    name="choice of housing"
-                    type="radio"
-                    value="hotel"
-                    id="hotel"
-                    checked
-                  />Гостиница</label
-                >
+                <label for="hotel" class="controls"><input class="controls" name="choice of housing" type="radio" value="hotel" id="hotel" checked/>Гостиница</label>
               </li>
               <li class="catalog-filter-item">
-                <label for="motel" class="controls"
-                  ><input
-                    class="controls"
-                    name="choice of housing"
-                    type="radio"
-                    value="motel"
-                    id="motel"
-                  />Мотель</label
-                >
+                <label for="motel" class="controls"><input class="controls" name="choice of housing" type="radio" value="motel" id="motel"/>Мотель</label>
               </li>
               <li class="catalog-filter-item">
-                <label for="appartments" class="controls"
-                  ><input
-                    class="controls"
-                    name="choice of housing"
-                    type="radio"
-                    value="appartments"
-                    id="appartments"
-                  />Аппартаменты</label
-                >
+                <label for="appartments" class="controls"><input class="controls" name="choice of housing" type="radio" value="appartments" id="appartments"/>Аппартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="catalog-price-group">
             <legend class="price-title">Стоимость, Р:</legend>
             <label for="0">от</label>
-            <input
-              class="button"
-              type="number"
-              id="0"
-              name="0"
-              min="0"
-              max="9000"
-              placeholder="от"
-            />
+            <input class="button" type="number" id="0" name="0" min="0" max="9000" placeholder="от"/>
             <label for="9000">до</label>
-            <input
-              type="number"
-              id="9000"
-              name="9000"
-              min="0"
-              max="9000"
-              placeholder="до"
-            />
+            <input type="number" id="9000" name="9000" min="0" max="9000" placeholder="до"/>
           </fieldset>
           <div class="action-buttons">
           <button class="filter-button-submite button" type="submit">Применить</button>
@@ -186,8 +124,9 @@
       </div>
         <ul class="catalog-list">
           <div class="catalog-list-container">
-            <div class="catalog-item-container">
+
           <li class="catalog-item">
+            <div class="catalog-item-container">
             <a class="catalog-card-link" href="#" tabindex="-1" >
               <img class="catalog-item-image" width="300" height="212" src="images/hotel-1 .jpg" alt="карточка отеля"/></a>
             <a class="catalog-card-link" href="">
@@ -199,10 +138,12 @@
            <p class="raiting-stars">
             <span class="visualy-hidden">Отель 4 звезды</span></p>
             <span class="rating">Рейтинг 8,5</span>
+            </div>
           </li>
-        </div>
-        <div class="catalog-item-container">
+
+
           <li class="catalog-item">
+            <div class="catalog-item-container">
             <a class="catalog-card-link" href="#" tabindex="-1">
               <img class="catalog-item-image" src="images/hotel-2 .jpg" width="300" height="212" alt="карточка отеля"/></a>
             <a class="catalog-card-link" href="#">
@@ -214,10 +155,12 @@
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 4 звезды</span></p>
             <span class="rating">Рейтинг 9,2</span>
+            </div>
           </li>
-        </div>
-        <div class="catalog-item-container">
+
+
           <li class="catalog-item">
+            <div class="catalog-item-container">
            <a class="catalog-card-link" href="#" tabindex="-1">
              <img class="catalog-item-image" src="images/hotel-3 .jpg" width="300" height="212" alt="карточка отеля"  /></a>
            <a class="catalog-card-link" href="#"></a> <h3 class="catalog-title">Desert Quail Inn</h3></a>
@@ -228,10 +171,12 @@
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 3 звезды</span></p>
             <span class="rating">Рейтинг 6,9</span>
+            </div>
           </li>
-        </div>
-        <div class="catalog-item-container">
+
+
           <li class="catalog-item">
+            <div class="catalog-item-container">
             <a class="catalog-card-link" href="#" tabindex="-1">
                <img class="catalog-item-image" src="images/hotel-4 .jpg" width="300" height="212" alt="карточка отеля" /></a>
             <a class="catalog-card-link" href="#">  <h3 class="catalog-title">GreenTree Inn</h3></a>
@@ -242,13 +187,14 @@
             <p class="raiting-stars">
               <span class="visualy-hidden">Отель 2 звезды</span></p>
             <span class="rating">Рейтинг 5,0</span>
+            </div>
           </li>
-        </div>
+
         </div>
         </ul>
 
       </section>
-      <div class="pagination-container">
+
            <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current" href="#">1</a>
@@ -269,7 +215,7 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-    </div>
+
       <section class="newsletter-inner">
         <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
         <p class="newsletter-description">
