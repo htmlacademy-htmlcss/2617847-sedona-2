@@ -157,9 +157,12 @@
                 <div price-range-wrapper>
                   <fieldset class="catalog-price-group">
                     <legend class="price-title">Стоимость, Р:</legend>
-                    <label class="visualy-hidden" for="0">0</label>
+
+                    <label class="visualy-hidden control-price-change" for="0"
+                      >0</label
+                    >
                     <input
-                      class="button button-price"
+                      class="button button-price min"
                       type="number"
                       id="0"
                       name="0"
@@ -167,9 +170,13 @@
                       max="9000"
                       placeholder="от"
                     />
-                    <label class="visualy-hidden" for="9000">9000</label>
+                    <label
+                      class="visualy-hidden control-price-change"
+                      for="9000"
+                      >9000</label
+                    >
                     <input
-                      class="button button-price"
+                      class="button button-price max"
                       type="number"
                       id="9000"
                       name="9000"
