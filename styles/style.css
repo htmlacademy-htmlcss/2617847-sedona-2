@@ -124,13 +124,13 @@ body {
 }
 
 .navigation-user .navigation-item-icon:nth-child(1) .navigation-link {
-  background-image: url("https://antonsolomatin.github.io/images/decorate/heart.svg");
+  background-image: url("../images/decorate/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .navigation-user .navigation-item-icon:nth-child(2) .navigation-link {
-  background-image: url("/images/decorate/heart.svg");
+  background-image: url("../images/decorate/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -422,15 +422,15 @@ body {
 }
 
 .infrastructure-title-home::before {
-  background-image: url("/images/decorate/hotels-icon.svg");
+  background-image: url("../images/decorate/hotels-icon.svg");
 }
 
 .infrastructure-title-food::before {
-  background-image: url("/images/decorate/Food.svg");
+  background-image: url("../images/decorate/Food.svg");
 }
 
 .infrastructure-title-gifts::before {
-  background-image: url("/images/decorate/Gift.svg");
+  background-image: url("../images/decorate/Gift.svg");
 }
 
 .reservation {
@@ -801,7 +801,7 @@ body {
 }
 
 .hotels-filter {
-  background-image: url(../images/decorate/Filter.jpg);
+  background-image: url(../images/decorate/filter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -851,7 +851,7 @@ col {
   display: block;
   width: 13px;
   height: 21px;
-  background-image: url("/images/decorate/main-page.svg");
+  background-image: url("../images/decorate/main-page.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -879,7 +879,7 @@ col {
   display: block;
   width: 8px;
   height: 20px;
-  background-image: url("/images/decorate/separator.svg");
+  background-image: url("../images/decorate/separator.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -961,7 +961,7 @@ col {
 .grid-view::after {
   position: absolute;
   content: "";
-  background-image: url("/images/decorate/view-mode-grid.svg");
+  background-image: url("../images/decorate/view-mode-grid.svg");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
@@ -974,7 +974,7 @@ col {
 .one-by-one-view::after {
   position: absolute;
   content: "";
-  background-image: url("/images/decorate/view-mode-by-one.svg");
+  background-image: url("../images/decorate/view-mode-by-one.svg");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
@@ -987,7 +987,7 @@ col {
 .list-view::after {
   position: absolute;
   content: "";
-  background-image: url("/images/decorate/view-mode-list.svg");
+  background-image: url("../images/decorate/view-mode-list.svg");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
@@ -1162,7 +1162,7 @@ col {
   content: "";
   display: block;
   height: 17px;
-  background-image: url("/images/decorate/star.svg");
+  background-image: url("../images/decorate/star.svg");
   background-repeat: space no-repeat;
   background-size: contain;
 }
