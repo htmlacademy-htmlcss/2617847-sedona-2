@@ -124,7 +124,7 @@ body {
 }
 
 .navigation-user .navigation-item-icon:nth-child(1) .navigation-link {
-  background-image: url("/images/decorate/search.svg");
+  background-image: url("../images/decorate/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
