@@ -207,18 +207,22 @@
             <form class="form-auth" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
                 <label class="modal-input-label modal-label-text" for="modal-input-in">Дата Заезда:</label>
-                <input class="modal-input modal-label-text" type="text" name="date" id="modal-input-in">
+                <input class="modal-input modal-label-text" type="text" name="date" id="modal-input-in" value="27 апреля 2020">
+                <span class="warning-red">Мы не можем отправить вас в прошлое.</span>
 
              </p>
               <p class="field-group">
                 <label class="modal-input-label modal-label-text" for="modal-input-out">Дата Выезда:</label>
-                <input class="modal-input" type="text" name="date" id="modal-input-out">
+                <input class="modal-input" type="text" name="date" id="modal-input-out" value="1 сентября 2023">
+                <span class="warning-black">На эти даты есть свободные номера. Пока есть.</span>
+
              </p>
 
-             <label class="adults-label modal-label-text" for="adults">Взрослые:</label>
-             <div class="modal-button-wrap">
+            <div class="population-wrapper">
+              <label class="adults-label modal-label-text" for="adults">Взрослые:</label>
+             <div class="modal-button-wrap-left">
                  <button class="minus-button button"></button>
-                 <input class="number-input" type="number" name="number-minus" id="adults">
+                 <input class="number-input" type="number" name="number-minus" id="adults" value="2">
                  <button class="plus-button button"></button>
              </div>
              <span class="children">
@@ -232,10 +236,11 @@
               </span>
              </span>
 
-             <div class="modal-button-wrap">
+             <div class="modal-button-wrap-right">
                  <button class="minus-button button"></button>
-                 <input class="number-input" type="number" name="number-minus" id="adults">
+                 <input class="number-input" type="number" name="number-minus" id="adults" value="2">
                  <button class="plus-button button"></button>
+             </div>
              </div>
 
 
