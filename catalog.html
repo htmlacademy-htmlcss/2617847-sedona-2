@@ -167,28 +167,27 @@
                 <div price-range-wrapper>
                   <fieldset class="catalog-price-group">
                     <legend class="price-title">Стоимость, Р:</legend>
-
                     <label class="control-price-change">
                       <input
                         class="button button-price min"
                         type="number"
-                        name="0"
+                        name="min-price"
                         min="0"
                         max="9000"
-                        placeholder="от"
                         value="0"
                       />
+                      <span class="price-control-label">от</span>
                     </label>
                     <label class="control-price-change">
                       <input
                         class="button button-price max"
                         type="number"
-                        name="9000"
+                        name="max-price"
                         min="0"
                         max="9000"
-                        placeholder="до"
                         value="9000"
                       />
+                      <span class="price-control-label">до</span>
                     </label>
                   </fieldset>
                   <div class="range-scale">
@@ -408,7 +407,9 @@
               action="https://echo.htmlacademy.ru"
               method="post"
             >
-              <label for="email-subscribe">Ваш Email</label>
+              <label class="visualy-hidden" for="email-subscribe"
+                >Ваш Email</label
+              >
               <input
                 class="input-font input-area-inner"
                 type="email"
