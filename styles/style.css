@@ -660,7 +660,6 @@ body {
 }
 
 .contact-tel {
-  width: 720px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -848,7 +847,7 @@ select {
   opacity: 0.5;
 }
 
-.controls:focus-visible {
+.controls-mark:focus-visible .controls-mark {
   border: 3px solid #83b3d3;
 }
 
@@ -861,6 +860,7 @@ select {
   background-color: #ffffff;
   border-radius: 5px;
 }
+
 
 .control-mark.radio {
   border-radius: 50%;
@@ -1053,7 +1053,7 @@ col {
   position: relative;
   height: 4px;
   background-color: #5f686c;
-  margin-top: 48px;
+  margin-top: 46px;
 }
 
 .range-bar {
@@ -1392,7 +1392,7 @@ col {
   outline-offset: -1px;
 }
 
-.pagination-link:focus {
+.pagination-link:focus-visible {
   background-color: #68a2ca;
 }
 
@@ -1411,7 +1411,7 @@ col {
   outline: none;
 }
 
-.pagination-current:focus {
+.pagination-current:focus-visible {
   background-color: #f2f2f2;
   outline: none;
 }
@@ -1586,6 +1586,16 @@ col {
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
+
+.modal-input:hover {
+  background-color: #E5E5E5;
+}
+
+.modal-input:focus-visible {
+  outline: 3px solid #83B3D3
+}
+
+
 
 .modal-button-submit {
   cursor: pointer;
