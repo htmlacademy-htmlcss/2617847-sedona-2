@@ -671,7 +671,7 @@ body {
   padding: 35px 70px 70px 70px;
 }
 
-.filter {
+.form-filter {
   display: flex;
 }
 
@@ -974,12 +974,6 @@ select {
   gap: 10px;
 }
 
-col {
-  font-size: 16px;
-  line-height: 21px;
-  text-decoration: none;
-  color: #ffffff;
-}
 
 .breadcrumps-link {
   width: 12px;
@@ -999,8 +993,6 @@ col {
 .breadcrumps-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 .breadcrumps-link:active   {
   background: rgba(255, 255, 255, 0.3);
@@ -1441,9 +1433,6 @@ col {
 
 .newsletter-inner {
   text-align: center;
-  background-size: 100% auto;
-  width: 1200px;
-  height: 414px;
   display: flex;
   flex-direction: column;
 }
@@ -1706,6 +1695,10 @@ col {
   background-color: transparent;
   padding: 0;
   margin: 0;
+  display: block;
+}
+
+.tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
 
