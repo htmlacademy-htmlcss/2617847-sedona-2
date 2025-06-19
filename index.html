@@ -46,7 +46,7 @@
           </nav>
         </div>
       </header>
-      <main class="main-index main-container">
+      <main class="main-index">
         <section class="index-hero">
           <h2 class="visualy-hidden">Седона, городок в Аризоне</h2>
           <img class="sedona-logo" src="images/welcome-sedona.svg" width="458" height="352"
@@ -211,14 +211,14 @@
               <div class="field-group">
                 <label class="modal-input-label modal-label-text" for="date-in">Дата Заезда:</label>
                 <input class="modal-input modal-label-text" type="text" name="date-in" id="date-in"
-                  value="27 апреля 2020" placeholder="Укажите дату">
+                  value="27 апреля 2020" placeholder="Укажите дату" required>
                 <span class="warning-red">Мы не можем отправить вас в прошлое.</span>
 
               </div>
               <div class="field-group">
                 <label class="modal-input-label modal-label-text" for="date-out">Дата Выезда:</label>
                 <input class="modal-input" type="text" name="date-out" id="date-out" value="1 сентября 2023"
-                  placeholder="Укажите дату">
+                  placeholder="Укажите дату" required>
                 <span class="warning-black">На эти даты есть свободные номера. Пока есть.</span>
 
               </div>
@@ -232,7 +232,7 @@
                       <path d="M0 0v2h14V0H0Z" />
                     </svg>
                   </button>
-                  <input class="number-input" type="number" name="adults" id="adults" value="2">
+                  <input class="number-input" type="number" name="adults" id="adults" value="2" required>
                   <button type="button" class="plus-button button">
                     <span class="visualy-hidden">плюс</span>
                     <svg class="plus-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
@@ -266,7 +266,7 @@
                       <path d="M0 0v2h14V0H0Z" />
                     </svg>
                   </button>
-                  <input class="number-input" type="number" name="children" id="children" value="2">
+                  <input class="number-input" type="number" name="children" id="children" value="2" required>
                   <button type="button" class="plus-button button">
                     <span class="visualy-hidden">плюс</span>
                     <svg class="plus-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
