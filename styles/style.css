@@ -435,13 +435,9 @@ body {
 .reservation {
   display: flex;
   flex-direction: column;
-}
-
-.reservation-container {
-  display: flex;
-  flex-direction: column;
   padding: 96px 304px;
 }
+
 
 .reservation-title {
   font-weight: 700;
@@ -687,22 +683,12 @@ body {
 }
 
 
-.control-price-change:hover {
+.button-price:hover {
   background-color: #e6e6e6;
 }
 
 .control-price-change:focus-visible {
   border: 3px solid #83b3d3;
-}
-
-.control-price-change:first-of-type {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.control-price-change:last-of-type {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
 }
 
 .min {
