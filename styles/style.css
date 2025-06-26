@@ -132,13 +132,13 @@ body {
 
 }
 
-.navigation-user .navigation-item-icon:nth-child(1) .navigation-link {
+.navigation-item-icon:nth-child(1) .navigation-link {
   background-image: url("../images/decorate/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user .navigation-item-icon:nth-child(2) .navigation-link {
+.navigation-item-icon:nth-child(2) .navigation-link {
   background-image: url("../images/decorate/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -159,7 +159,7 @@ body {
 }
 
 .button {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -806,7 +806,7 @@ input[type="number"]::-webkit-inner-spin-button {
     18px;
 }
 
-select {
+.select {
   -webkit-appearance: none;
           appearance: none;
 }
@@ -987,7 +987,7 @@ select {
 
 
 .breadcrumps-link {
-  font-family: PT Sans;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
