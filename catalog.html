@@ -12,7 +12,7 @@
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <div class="header-container">
           <nav class="navigation">
             <a href="index.html" class="navigation-logo">
@@ -46,9 +46,8 @@
           </nav>
         </div>
       </header>
-      <main class="main-inner">
-
-        <section class="hotels-filter">
+      <main class="main-inner" data-test="main">
+        <section class="hotels-filter" data-test="filter">
           <h1 class="visualy-hidden">Гостинцы Седоны</h1>
           <h2 class="hotel-search-title">Гостиницы Седоны</h2>
           <ul class="breadcrumps-list">
@@ -91,7 +90,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list" data-test="catalog">
                 <li class="catalog-filter-item">
                   <label for="hotel" class="controls">
                     <input class="visualy-hidden controls-input" name="choice of housing" type="radio" value="hotel"
@@ -118,7 +117,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="catalog-price-group">
               <legend class="price-title">Стоимость, Р:</legend>
               <label class="control-price-change">
@@ -140,8 +138,6 @@
                 </div>
               </div>
             </fieldset>
-
-
             <div class="action-buttons">
               <button class="filter-button-submite button" type="submit">
                 Применить
@@ -180,7 +176,6 @@
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
-
               <a class="catalog-card-link" href="#" tabindex="-1">
                 <img class="catalog-item-image" width="300" height="212" src="images/hotel-1.jpg"
                   alt="карточка отеля" /></a>
@@ -193,7 +188,7 @@
               </div>
               <div class="catalog-buttons-wrapper">
                 <a class="more-details button" href="#">Подробнее</a>
-                <button class="favorites-card button">В избранное</button>
+                <button class="favorites-card button" type="button">В избранное</button>
               </div>
               <div class="rating-wrapper">
                 <p class="raiting-stars star-2">
@@ -201,10 +196,8 @@
                 </p>
                 <span class="rating">Рейтинг 8,5</span>
               </div>
-
             </li>
             <li class="catalog-item">
-
               <a class="catalog-card-link" href="#" tabindex="-1">
                 <img class="catalog-item-image" src="images/hotel-2.jpg" width="300" height="212"
                   alt="карточка отеля" /></a>
@@ -217,7 +210,7 @@
               </div>
               <div class="catalog-buttons-wrapper">
                 <a class="more-details button" href="#">Подробнее</a>
-                <button class="favorites-card-current button">
+                <button class="favorites-card-current button" type="button">
                   В избранном
                 </button>
               </div>
@@ -227,10 +220,8 @@
                 </p>
                 <span class="rating">Рейтинг 9,2</span>
               </div>
-
             </li>
             <li class="catalog-item">
-
               <a class="catalog-card-link" href="#" tabindex="-1">
                 <img class="catalog-item-image" src="images/hotel-3.jpg" width="300" height="212"
                   alt="карточка отеля" />
@@ -244,7 +235,7 @@
               </div>
               <div class="catalog-buttons-wrapper">
                 <a class="more-details button" href="#">Подробнее</a>
-                <button class="favorites-card button">В избранное</button>
+                <button class="favorites-card button" type="button">В избранное</button>
               </div>
               <div class="rating-wrapper">
                 <p class="raiting-stars star-3">
@@ -252,11 +243,8 @@
                 </p>
                 <span class="rating">Рейтинг 6,9</span>
               </div>
-
             </li>
-
             <li class="catalog-item">
-
               <a class="catalog-card-link" href="#" tabindex="-1">
                 <img class="catalog-item-image" src="images/hotel-4.jpg" width="300" height="212"
                   alt="карточка отеля" /></a>
@@ -269,7 +257,7 @@
               </div>
               <div class="catalog-buttons-wrapper">
                 <a class="more-details button" href="#">Подробнее</a>
-                <button class="favorites-card button">В избранное</button>
+                <button class="favorites-card button" type="button">В избранное</button>
               </div>
               <div class="rating-wrapper">
                 <p class="raiting-stars star-2">
@@ -277,7 +265,6 @@
                 </p>
                 <span class="rating">Рейтинг 5,0</span>
               </div>
-
             </li>
           </ul>
         </section>
@@ -301,7 +288,7 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <section class="newsletter-inner">
+        <section class="newsletter-inner" data-test="subscribe">
           <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
           <p class="newsletter-description">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -358,9 +345,7 @@
             </svg>
           </a>
         </footer>
-
       </main>
-
     </div>
   </body>
 

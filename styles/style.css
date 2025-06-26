@@ -37,7 +37,8 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -85,7 +86,8 @@ body {
 
 .navigation-list {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  margin: 0 0 0 14px;
   padding: 0;
   list-style-type: none;
 }
@@ -209,6 +211,10 @@ body {
   padding: 51px 371px;
 }
 
+.description-wraper {
+  min-height: 261px;
+}
+
 .main-description {
   font-size: 30px;
   line-height: 36px;
@@ -260,6 +266,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 400px;
   padding: 102px 85px;
 }
 
@@ -356,6 +363,7 @@ body {
 
 .infrastructure-list {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   min-height: 385px;
   margin: 0 auto;
@@ -383,11 +391,17 @@ body {
   margin: 0;
 }
 
-.infrastructure-container {
+.infrastructure-item {
+  box-sizing: border-box;
+  width: 400px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 81px 85px;
+}
+
+.medium {
+ background-color: rgba(131, 179, 211, 0.2)
 }
 
 .infrastructure-title {
@@ -489,6 +503,7 @@ body {
 
 .newsletter {
   background-image: url(../images/decorate/subscribe.jpg);
+  background-color: #283B42;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -589,7 +604,9 @@ body {
 
 .socials-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  width: 142px;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -728,7 +745,8 @@ body {
 }
 
 input[type="number"]::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -786,7 +804,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 select {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover {
@@ -932,6 +951,7 @@ select {
 
 .hotels-filter {
   background-image: url(../images/decorate/filter.jpg);
+  background-color: #283B42;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1340,7 +1360,7 @@ select {
   list-style-type: none;
   padding: 40px 70px 60px 70px;
   margin: 0;
-  column-gap: 8px;
+  gap: 8px;
 }
 
 .pagination-link {

@@ -12,7 +12,7 @@
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <div class="header-container">
           <a href="#" class="navigation-logo">
             <img class="page-header-logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип сайта" />
@@ -46,13 +46,13 @@
           </nav>
         </div>
       </header>
-      <main class="main-index">
-        <section class="index-hero">
+      <main class="main-index" data-test="main">
+        <section class="index-hero" data-test="hero">
           <h2 class="visualy-hidden">Седона, городок в Аризоне</h2>
           <img class="sedona-logo" src="images/welcome-sedona.svg" width="458" height="352"
             alt="добро пожаловать в седону" />
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="advantages-title visualy-hidden">Преимущества</h2>
           <div class="description-wraper">
             <p class="main-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -95,51 +95,38 @@
               </div>
             </li>
           </ul>
-
         </section>
-        <section class="services">
-
+        <section class="services" data-test="service">
           <h2 class="main-infrastructure-title visualy-hidden">Инфраструктура</h2>
           <p class="main-infrastructure-description">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
           </p>
           <p class="personal">Опытный персонал и качественное обслуживание!</p>
           <ul class="infrastructure-list">
-            <li class="infrastructure-item advantages-item-medium">
-              <div class="infrastructure-container">
-
-                <h3 class="infrastructure-title infrastructure-title-icon infrastructure-title-home">Жильё</h3>
-                <p class="infrastructure-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </div>
+            <li class="infrastructure-item medium">
+              <h3 class="infrastructure-title infrastructure-title-icon infrastructure-title-home">Жильё</h3>
+              <p class="infrastructure-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="infrastructure-item">
-              <div class="infrastructure-container">
-
-                <h3 class="infrastructure-title infrastructure-title-icon infrastructure-title-food">Еда</h3>
-                <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер, вы не
-                  разочаруетесь!</p>
-              </div>
+              <h3 class="infrastructure-title infrastructure-title-icon infrastructure-title-food">Еда</h3>
+              <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер, вы не
+                разочаруетесь!</p>
             </li>
-            <li class="infrastructure-item advantages-item-medium ">
-              <div class="infrastructure-container">
-                <h3 class="infrastructure-title infrastructure-title-icon infrastructure-title-gifts">Сувениры</h3>
-                <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!</p>
-              </div>
+            <li class="infrastructure-item medium">
+              <h3 class="infrastructure-title infrastructure-title-icon infrastructure-title-gifts">Сувениры</h3>
+              <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
-
         </section>
-        <section class="reservation">
-
+        <section class="reservation" data-test="search">
           <h2 class="reservation-title">Заинтересовались?</h2>
           <p class="reservation-description">
             Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <a class="reservation-link" href="#">Поиск гостиницы в Cедоне</a>
-
         </section>
-        <section class="newsletter">
+        <section class="newsletter" data-test="subscribe">
           <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
           <p class="newsletter-description">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -152,7 +139,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="socials-list">
           <li class="socials-item">
             <a class="footer-link footer-socials-link" href="https://vk.com/htmlacademy">
@@ -186,7 +173,6 @@
             </a>
           </li>
         </ul>
-
         <a class="contact-tel footer-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="academy-logo footer-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg role="img" aria-label="логотип HTML academy" xmlns="http://www.w3.org/2000/svg" width="115" height="34"
@@ -213,14 +199,12 @@
                 <input class="modal-input modal-label-text" type="text" name="date-in" id="date-in"
                   value="27 апреля 2020" placeholder="Укажите дату" required>
                 <span class="warning-red">Мы не можем отправить вас в прошлое.</span>
-
               </div>
               <div class="field-group">
                 <label class="modal-input-label modal-label-text" for="date-out">Дата Выезда:</label>
                 <input class="modal-input" type="text" name="date-out" id="date-out" value="1 сентября 2023"
                   placeholder="Укажите дату" required>
                 <span class="warning-black">На эти даты есть свободные номера. Пока есть.</span>
-
               </div>
               <div class="population-wrapper">
                 <label class="adults-label modal-label-text" for="adults">Взрослые:</label>
@@ -277,7 +261,6 @@
                 </div>
               </div>
               <button class="modal-button-submit button" type="submit">Найти</button>
-
             </form>
           </section>
         </div>
