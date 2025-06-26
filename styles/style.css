@@ -538,7 +538,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 684px;
-  height: 52px;
+  min-height: 52px;
   margin: 53px 258px 104px;
 }
 
@@ -598,7 +598,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 1060px;
   padding-top: 46px;
   padding-bottom: 30px;
@@ -661,6 +661,7 @@ body {
 }
 
 .contact-tel {
+  display: inline-block;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -668,6 +669,13 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 332px;
 }
 
 .contact-tel:hover {
@@ -1040,7 +1048,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   width: 191px;
-  height: 104px;
+  min-height: 104px;
   padding: 0;
   align-self: flex-end;
   margin-left: auto;
